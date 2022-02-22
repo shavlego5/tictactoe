@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="settings">
+      <div class="first-player">
+        <img src="man.png" alt="" />
+        <h2>Player 1 - <img id="pl1" src="cross.png" alt="" /></h2>
+        <p id="player-1">0</p>
+      </div>
+      <div class="set">
+       <div class="counter">
+        <div>
+          <p>Row -</p>
+          <input type="number" value="3" min="3" id="row-count" />
+        </div>
+        <div>
+          <p>Column -</p>
+          <input type="number" value="3" min="3" id="column-count" />
+        </div>
+        <div>
+          <p>Symbols in a Row -</p>
+          <input type="number" value="3" min="3" id="win-count" />
+        </div>
+       </div>
+        <div class="buttons">
+          <button type="button" onclick="create()">Create</button>
+          <button type="button" onclick="restart()">Restart</button>
+        </div>
+      </div>
+      <div class="second-player">
+        <img src="man.png" alt="" />
+        <h2>Player 2 - <img id="pl2" src="circle.png" alt="" /></h2>
+        <p id="player-2">0</p>
+      </div>
+    </div>
+    <div class="players"></div>
+    <div id="table"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
